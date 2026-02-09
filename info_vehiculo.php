@@ -1,10 +1,10 @@
 <?php
 /* info_vehiculo.php - Información detallada de un vehículo */
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "";
+$password = "rootpass";
 $database = "TallerMecanico";
-$port = 3307;
+$port = 3306;
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database, $port);
