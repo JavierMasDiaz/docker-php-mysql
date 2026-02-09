@@ -1,10 +1,10 @@
 /* crearBD.php - Creación de la base de datos y la tabla Vehiculo */
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "";
+$password = "rootpass";
 $database = "TallerMecanico";
-$port = 3307;
+$port = 3306;
 
 // Conexión al servidor
 $conn = new mysqli($servername, $username, $password, "", $port);
