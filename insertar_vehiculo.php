@@ -1,10 +1,10 @@
 /* insertar_vehiculo.php - Inserción de datos en la base de datos */
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "";
+$password = "rootpass";
 $database = "TallerMecanico";
-$port = 3307;
+$port = 3306;
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database, $port);
