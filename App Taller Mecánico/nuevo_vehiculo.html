@@ -1,0 +1,43 @@
+<!-- nuevo_vehiculo.php - Formulario de registro de vehículo -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Registrar nuevo vehículo</legend>
+      <form action="insertar_vehiculo.php" method="POST">
+          <label>Propietario: <input type="text" name="propietario" required></label><br>
+          <label>Marca: <input type="text" name="marca" required></label><br>
+          <label>Modelo: <input type="text" name="modelo" required></label><br>
+          <label>Matrícula: <input type="text" name="matricula" required></label><br>
+          <label>Fecha de Ingreso: <input type="date" name="fecha_ingreso" required></label><br>
+          <label>Kilometraje: <input type="number" name="kilometraje" min="0" required></label><br>
+          <label>Avería: <textarea name="averia"></textarea></label><br>
+          <label>Estado de Reparación:
+              <select name="estado_reparacion">
+                  <option value="Pendiente">Pendiente</option>
+                  <option value="En reparación">En reparación</option>
+                  <option value="Reparado">Reparado</option>
+              </select>
+          </label><br>
+          <label>Presupuesto: <input type="number" name="presupuesto" step="0.01"></label><br>
+          <label>Nivel de Satisfacción: <input type="range" name="satisfaccion" min="0" max="10"></label><br>
+          <label>Método de contacto preferido:</label>
+          <input type="radio" name="contacto" value="Telefono"> Teléfono
+          <input type="radio" name="contacto" value="Correo"> Correo Electrónico
+          <input type="radio" name="contacto" value="WhatsApp"> WhatsApp<br>
+          <label>Servicios adicionales:</label>
+          <input type="checkbox" name="servicios[]" value="Lavado"> Lavado
+          <input type="checkbox" name="servicios[]" value="Cambio de neumáticos"> Cambio de neumáticos
+          <input type="checkbox" name="servicios[]" value="Revisión completa"> Revisión completa<br>
+          <br>
+          <label>Acepto los términos y condiciones <input type="checkbox" name="terminos" required></label><br>
+          <br>
+          <input type="submit" value="Registrar Vehículo">
+      </form>
+  </fieldset>
+  </body>
+</html>
