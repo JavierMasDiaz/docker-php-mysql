@@ -1,6 +1,6 @@
 /* editar_vehiculo.php - Edición de datos de un vehículo */
 <?php
-$servername = "adb";
+$servername = "db";
 $username = "root";
 $password = "rootpass";
 $database = "TallerMecanico";
